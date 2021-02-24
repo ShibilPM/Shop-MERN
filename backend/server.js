@@ -1,9 +1,12 @@
-const express = require("express");
-const dotenv = require("dotenv");
+import express from "express";
+import connectDB from "./config/db.js";
+import dotenv from "dotenv";
 
-const products = require("./data/products");
+import products from "./data/products.js";
 
 dotenv.config();
+
+connectDB();
 
 const app = express();
 

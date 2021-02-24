@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "MERN Shopping Cart App",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
@@ -13,7 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.11.18"
   },
   "devDependencies": {
     "concurrently": "^6.0.0"

@@ -13,6 +13,7 @@ import ProfilePage from "./pages/profilePage/ProfilePage.component";
 import ShippingPage from "./pages/shippingPage/ShippingPage.component";
 import PaymentPage from "./pages/paymentPage/PaymentPage.component";
 import PlaceOrderPage from "./pages/placeOrderPage/PlaceOrderPage.component";
+import OrderPage from "./pages/orderPage/OrderPage.component";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Header />
       <main className="py-3">
         <Container>
+          <Route path="/orders/:id" component={OrderPage} />
           <Route path="/placeorder" component={PlaceOrderPage} />
           <Route path="/payment" component={PaymentPage} />
           <Route path="/shipping" component={ShippingPage} />

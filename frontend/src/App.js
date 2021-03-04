@@ -16,6 +16,7 @@ import PlaceOrderPage from "./pages/placeOrderPage/PlaceOrderPage.component";
 import OrderPage from "./pages/orderPage/OrderPage.component";
 import UserListPage from "./pages/userListPage/UserListPage.component";
 import UserEditPage from "./pages/userEditPage/UserEditPage.component";
+import ProductListPage from "./pages/productListPage/ProductListPage.component";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/cart/:id?" component={CartPage} />
           <Route path="/admin/userlist" component={UserListPage} />
           <Route path="/admin/users/:id/edit" component={UserEditPage} />
+          <Route path="/admin/productlist" component={ProductListPage} />
           <Route path="/" component={HomePage} exact />
         </Container>
       </main>

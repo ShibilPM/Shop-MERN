@@ -6,6 +6,7 @@ import Product from "../../components/product/Product.component";
 import { listProducts } from "../../actions/productActions";
 import Loader from "../../components/Loader.component";
 import Message from "../../components/Message.component";
+import ProductCarousel from "../../components/Carousel/ProductCarousel.component";
 
 const HomePage = ({ match }) => {
   const keyword = match.params.keyword;
@@ -21,6 +22,7 @@ const HomePage = ({ match }) => {
 
   return (
     <>
+      {!keyword && <ProductCarousel />}
       <h1>Latest Products</h1>
       {loading ? (
         <Loader />
